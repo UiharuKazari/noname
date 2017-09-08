@@ -1,0 +1,20 @@
+tic-tac-toe
+
+4 X 4 chessboard
+two types of chessman: X & O
+X go first
+win if 3-in-a-row
+
+HOW?
+1. method of exhaustion
+perhaps OK because the amount is small.
+test win by all Permutation of chess
+
+... ...
+AFTER 10 MINS THINKING...
+... ...
+
+2. something more funny
+when making a move, change the status of its surrounding positions
+every position can be seen as a object
+win if an X's right is X and the second X's right is X
