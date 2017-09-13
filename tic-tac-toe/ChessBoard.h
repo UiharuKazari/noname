@@ -8,6 +8,7 @@ public:
 	ChessBoard(int x, int y, int z): win_num(x), length(y), width(z) { initChessBoard(); }
 	void show();
 	void set(vector<char>);
+	bool setone(int, int, char);
 	void initChessBoard();
 	int getlength() { return length; }
 	int getwidth() { return width; }

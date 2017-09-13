@@ -18,3 +18,5 @@ AFTER 10 MINS THINKING...
 when making a move, change the status of its surrounding positions
 every position can be seen as a object
 win if an X's right is X and the second X's right is X
+
+no need to define all eight positions, instead, we use RIGHT,DOWN,BOTTOM-RIGHT,UPPER-RIGHT.
