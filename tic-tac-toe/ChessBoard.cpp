@@ -7,9 +7,23 @@ void ChessBoard::show() {
 //	cout << "width: " << width << endl;
 //	cout << "win if " << win_num << "-in-a-row" << endl;
 	cout << "BOARD STATUS: " << endl;
+
+	cout << " ";
+	for(int i=1; i<=length; i++) {
+		cout << " ";
+		if (i>=10) cout << (char)(i+55);
+		else cout << i;
+	}
+	cout << endl;
+
 	for(vector<ChessSquare>::iterator it=css.begin(); it!=css.end(); it++) {
-		cout << it->getcm();
-		if(it->getcol() == width) cout << endl;
+		if(it->getcol() == 1) {
+			int i=it->getrow();
+			if (i>=10) cout << (char)(i+55);
+			else cout << i;
+		}
+		cout << " " << it->getcm();
+		if(it->getcol() == length) cout << endl;
 	}	
 }
 
